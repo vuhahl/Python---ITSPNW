@@ -1,4 +1,4 @@
-# ITS140
+# ITS140 - Q1
 week_day = int(input('Welcome! Please enter a number between 1 & 7:  '))
 if week_day > 7:
   output = 'Uh oh! Please enter a number between 1 & 7 '
