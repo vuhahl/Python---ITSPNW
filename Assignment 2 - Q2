@@ -1,0 +1,15 @@
+print  ("Welcome! Please enter the length and width of rectangle 1")
+rec1_leng = float(input("Length = "))
+rec1_wid = float(input("Width = "))
+area_rec1 = rec1_leng * rec1_wid
+print  ("Please enter the length and width of rectangle 2")
+rec2_leng = float(input("Length = "))
+rec2_wid = float(input("Width = "))
+area_rec2 = rec2_leng * rec2_wid
+
+if area_rec1 > area_rec2:
+  output = "The area of Rectangle 1 is greater."
+else:
+  output = "The area of Rectangle 2 is greater."
+
+print(output)
