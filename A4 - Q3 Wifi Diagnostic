@@ -1,0 +1,20 @@
+print('Please roboot the computer and try to connect.')
+update_q = input('Problem Fixed? Type Yes or No ')
+
+if update_q == "No":
+   print('Reboot the router and try to connect')
+   update_q = input('Problem Fixed? Type Yes or No ')
+
+   if update_q == "No":
+    print('Make sure cables between the router and modem are properly connected')
+    update_q = input('Problem Fixed? Type Yes or No ')
+
+    if update_q == "No":
+      print('Move the router to a new location and try to connect')
+      update_q = input('Problem Fixed? Type Yes or No ')
+
+      if update_q == "No":
+        print('Get a new router!')
+else:
+  print("Great! you're all set")
+  
