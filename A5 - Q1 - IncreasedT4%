@@ -1,7 +1,0 @@
-count = 1
-while count <= 10:
-  tuition = float(input("Welcome. Enter Tuition Fee: "))
-  pincrease = (0.04 * tuition)
-  newtuition = pincrease + tuition
-  print("In Year", count," Tuition is = $", format(newtuition,'.2f'), sep='')
-  count += 1

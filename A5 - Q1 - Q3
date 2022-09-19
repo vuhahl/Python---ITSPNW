@@ -1,0 +1,33 @@
+tuition = 15000
+count = 1
+while count <= 10:
+  tuition = float(tuition)
+  pincrease = (0.04 * tuition)
+  newtuition = pincrease + tuition
+  print("In Year", count," the tuition is = $", format(newtuition,'.2f'), sep='')
+  tuition = newtuition
+  count += 1
+
+
+tuition = 15000
+count = 1
+while count <= 10:
+  tuition = float(tuition)
+  rate = float(input("Enter Rate of Tuition Increase: "))
+  pincrease = (rate / 100) * tuition
+  newtuition = pincrease + tuition
+  print("In Year", count," the tuition is = $", format(newtuition,'.2f'), sep='')
+  tuition = newtuition
+  count += 1
+  
+  
+  tuition = 15000
+count = 1
+while count <= 10:
+  tuition = float(tuition)
+  pincrease = (0.5 * tuition)
+  newtuition = pincrease + tuition
+  print("In Year", count," the tuition is = $", format(newtuition,'.2f'), sep='')
+  tuition = newtuition
+  count += 1
+  
