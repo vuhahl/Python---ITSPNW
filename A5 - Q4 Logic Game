@@ -1,0 +1,42 @@
+import random
+
+start = "n"
+rerolls = 3
+flag = False
+rollone = random.randint(1, 6)
+rolltwo = random.randint(1, 6)
+roll_total = rollone + rolltwo 
+
+start = input("Do you want to play? Type y or n ")
+
+while flag != True:
+  print("Welcome to Fortune Teller.")
+
+  user_guess = int(input("Enter your guess between 2 - 12: "))
+
+  if user_guess == roll_total:
+    print("You won this round :(")
+
+    print ("Your guess was", user_guess, "while the sum of rolls was", roll_total,)
+    rerolls -= 1
+    print ("Tries :" ,rerolls)
+
+  elif user_guess != roll_total:
+    print("Ha ha. Loser!")
+
+    print( "tries left : ", rerolls - 1)
+    rerolls -= 1
+    rollone = random.randint(1, 6)
+    rolltwo = random.randint(1, 6)
+    roll_total = rollone + rolltwo  
+
+  if rerolls == 0:
+    print("You suck at this game.")
+
+    print ("Your guess was", user_guess, "while the sum of rolls was", roll_total,)
+
+    start = input("Do you want to play? Type y or n ")
+    if start == "n":
+      print("Better luck next time punk!")
+      flag = True
+  
