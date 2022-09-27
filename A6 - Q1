@@ -1,0 +1,38 @@
+def calc_average (test1,test2,test3,test4,test5):
+  avg = (test1 + test2 + test3 + test4 + test5)/5
+  return avg
+
+def get_letter_grade (test):
+  testA = test
+  if (test < 60):
+    lettergrade = "F"
+    return lettergrade
+  elif test >= 60 and test < 70:
+    lettergrade = "D"
+    return lettergrade
+  elif test >= 70 and test < 80:
+    lettergrade = "C"
+    return lettergrade
+  elif test >= 80 and test < 90:
+    lettergrade = "B"
+    return lettergrade
+  elif test >= 90:
+    lettergrade = "A"
+    return lettergrade
+
+test1 = float(input("Enter Test 1 Score: ")) 
+test2 = float(input("Enter Test 2 Score: ")) 
+test3 = float(input("Enter Test 3 Score: "))
+test4 = float(input("Enter Test 4 Score: "))
+test5 = float(input("Enter Test 5 Score: "))
+
+print("Score:",test1,"\t" "Letter Grade = ", get_letter_grade(test1))
+print("Score: ",test2,"\t" "Letter Grade = ", get_letter_grade(test2))
+print("Score:",test3,"\t" "Letter Grade = ", get_letter_grade(test3))
+print("Score:",test4,"\t" "Letter Grade = ", get_letter_grade(test4))
+print("Score:",test5,"\t" "Letter Grade = ", get_letter_grade(test5))
+
+avg = (test1 + test2 + test3 + test4 + test5)/5
+print("Average Test Results: ", avg)
+
+
